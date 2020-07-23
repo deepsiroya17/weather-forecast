@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Forecast</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="search-bar">
+    <form action="/" method="post">
+      <input type="text" class="cityname" name="cityName" placeholder="City Name" autocomplete="off">
+      <button type="submit" class="submit">Get Weather</button>
+    </form>
+  </div>
+
+  <% if(cityname !== null) { %>
+  <div class="main">
+
+    <div class="container-1">
+      <% if(cityname === "city not found") { %>
+      <h1 class="noCity location"><%= cityname %></h1>
+      <% } else {%>
+      <h1 class="location"><%= cityname %></h1>
+      <% } %>
+
+      <% if(cur_weather.cur_day !== null) { %>
+      <h3 class="date"><%= cur_weather.cur_day %></h3>
+      <% } %>
+
+      <% if(cur_weather.cur_icon !== null) { %>
+      <img class="main-icon" src="http://openweathermap.org/img/wn/<%= cur_weather.cur_icon %>@2x.png" alt="Img">
+      <% } %>
+
+      <% if(cur_weather.cur_desc !== null) { %>
+      <p class="description"><%= cur_weather.cur_desc %></p>
+      <% } %>
+
+      <% if(cur_weather.cur_temp !== null) { %>
+      <div class="temp">
+        <h1 class="temp-main" id="temp"><%= cur_weather.cur_temp %>°<span>C</span></h1>
+        <div class="temp-degree">
+          <button type="button" id="cel" onclick="change()" name="button">C</button>
+          <hr class="temp-hr">
+          <button type="button" id="far" onclick="change()" name="button">F</button>
+        </div>
+      </div>
+      <% } %>
+
+      <div class="container-2">
+        <% if(cur_weather.pressure !== null) { %>
+        <div class="reading">
+          <img src="images/pressure.png">
+          <p>Pressure</p>
+          <h3><%= cur_weather.pressure %> hPa</h3>
+        </div>
+        <% } %>
+
+        <% if(cur_weather.humidity !== null) { %>
+        <div class="reading">
+          <img src="images/humidity.png">
+          <p>Humidity</p>
+          <h3><%= cur_weather.humidity %> %</h3>
+        </div>
+        <% } %>
+
+        <% if(cur_weather.wind_speed !== null) { %>
+        <div class="reading">
+          <img src="images/wind.png">
+          <p>Wind Speed</p>
+          <h3><%= cur_weather.wind_speed %> mps</h3>
+        </div>
+        <% } %>
+      </div>
+
+    </div>
+
+    <div class="container-3">
+      <% dep.forEach(function(weather) { %>
+      <div class="cont">
+        <p class="day"><%= weather.day %></p>
+        <img class="icon" src="http://openweathermap.org/img/wn/<%= weather.icon %>@2x.png" alt=" Img">
+        <p class="temperature"><%= weather.temp %>°C</p>
+        <p class="desc"><%= weather.description %></p>
+      </div>
+      <% }) %>
+    </div>
+
+  </div>
+  <% } %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="temp.js" charset="utf-8"></script>
+
+</body>
+
+</html>

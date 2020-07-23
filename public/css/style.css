@@ -1,0 +1,204 @@
+body {
+    background-color: #00adb5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #eeeeee;
+}
+
+span{
+  display: none;
+}
+/******************************** SEARCH BAR ************************************/
+.search-bar {
+    background-color: #393e46;
+    height: 400px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    text-align: center;
+}
+
+.cityname {
+    background-color: #393e46;
+    outline: none;
+    border-style: none;
+    border-bottom: 1.5px solid slategray;
+    padding: 10px;
+    margin-right: 50px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+input {
+  color: slategray;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+::placeholder {
+  color: slategray;
+}
+
+.submit {
+  padding: 10px;
+  border-radius: 2px;
+  border: 1.5px solid slategray;
+  background-color: #393e46;
+  color: slategray;
+  font-size: 1.2rem;
+}
+
+/******************************** MAIN SECTION *********************************/
+.main {
+  width: 66%;
+  height: 550px;
+  background-color: #222831;
+  position: relative;
+  bottom: 230px;
+  left: 17%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+}
+
+.container-1 {
+  text-align: left;
+  margin-left: 60px;
+  display: inline-block;
+  width: 45%;
+}
+
+.location {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.noCity {
+  margin-top: 242px;
+  margin-left: 250px;
+  width: 100%;
+}
+
+.date {
+  margin: 0;
+  font-weight: 300;
+}
+
+.main-icon {
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 1.4rem;
+  float: right;
+  margin-top: 50px;
+  margin-right: 170px;
+  text-transform: capitalize;
+}
+
+/******************************* TEMPERATURE SECTION ***************************/
+.temp {
+  display: flex;
+}
+
+.temp-main {
+  font-size: 4rem;
+  margin-top: 0px;
+  font-weight: 500
+}
+
+.temp-degree {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.temp-degree button {
+  font-size: 1.5rem;
+  background-color: #222831;
+  border: none;
+  color: #eeeeee;
+  padding-top: 3px;
+}
+
+.temp-degree button:hover {
+  color: slategray;
+}
+
+.temp-degree button:focus {
+  color: slategray;
+  outline: none;
+}
+
+.temp-hr {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+/****************************** READING SECTION ********************************/
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reading {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.reading p,h3 {
+  margin: 10px;
+}
+
+.reading p {
+  font-weight: 300;
+}
+
+/*********************** NEXT 4 DAYS FORECAST SECTION ***************************/
+.container-3 {
+  position: absolute;
+  right: 0;
+}
+
+.cont {
+  margin: 20px;
+  margin-top: 30px;
+  height: 80px;
+  width: 300px;
+  background: #2d3a47;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.day {
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.icon {
+  position: relative;
+  right: -230px;
+  bottom: 55px;
+  width: 25%;
+}
+
+.temperature {
+  position: relative;
+  font-size: 1.5rem;
+  bottom: 48px;
+  right: 78px;
+  display: inline;
+  font-weight: 300;
+}
+
+.desc {
+  position: absolute;
+  right: 50px;
+  display: inline;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
