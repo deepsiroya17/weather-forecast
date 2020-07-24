@@ -210,16 +210,18 @@ input:focus::placeholder {
   /******************************** SEARCH BAR ************************************/
   .cityname {
       margin: 40px auto 20px;
+      font-size: 1rem;
   }
 
   .submit {
-    width: 66%;
+    width: 60%;
+    font-size: 1rem;
   }
 
   /******************************** MAIN SECTION *********************************/
   .main {
     width: 90%;
-    height: 1000px;
+    height: 1050px;
     left: 5%;
     display: block;
   }
@@ -280,23 +282,32 @@ input:focus::placeholder {
 
   /*********************** NEXT 4 DAYS FORECAST SECTION ***************************/
   .container-3 {
-    right: -8px;
+    position: relative;
+    right: 5px;
   }
 
   .cont {
-    width: 280px;
+    position: relative;
+    left: 5%;
+    margin: 0px;
+    margin-top: 30px;
+    width: 80%;
   }
 
   .icon {
-    right: -220px;
+    position: relative;
+    left: 190px;
   }
 
   .temperature {
     font-size: 1.4rem;
     bottom: 40px;
+    right: 68px;
   }
 
   .desc {
-    right: 40px;
+    position: absolute;
+    right: 25px;
+    bottom: 0px;
   }
 }
