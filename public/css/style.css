@@ -203,3 +203,258 @@ input:focus::placeholder {
   font-weight: 300;
   text-transform: capitalize;
 }
+
+/************************************* MEDIA QUERY *************************************/
+@media (max-width: 375px) {
+  /******************************** MAIN SECTION *********************************/
+  .main {
+    width: 80%;
+    height: 550px;
+    background-color: #222831;
+    position: relative;
+    bottom: 230px;
+    left: 17%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+  }
+
+  .container-1 {
+    text-align: left;
+    margin-left: 60px;
+    display: inline-block;
+    width: 45%;
+  }
+
+  .location {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  .noCity {
+    margin-top: 242px;
+    margin-left: 250px;
+    width: 100%;
+  }
+
+  .date {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .main-icon {
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    margin: 0;
+    position: relative;
+    left: 128px;
+    bottom: 70px;
+    text-transform: capitalize;
+  }
+
+  /******************************* TEMPERATURE SECTION ***************************/
+  .temp {
+    display: flex;
+  }
+
+  .temp-main {
+    font-size: 4rem;
+    margin-top: 0px;
+    font-weight: 500
+  }
+
+  .temp-degree {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .temp-degree button {
+    font-size: 1.5rem;
+    background-color: #222831;
+    border: none;
+    color: #eeeeee;
+    padding-top: 3px;
+  }
+
+  .temp-degree button:hover {
+    color: slategray;
+  }
+
+  .temp-degree button:focus {
+    color: slategray;
+    outline: none;
+  }
+
+  .temp-hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+
+  /****************************** READING SECTION ********************************/
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reading {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .reading p,h3 {
+    margin: 10px;
+  }
+
+  .reading p {
+    font-weight: 300;
+  }
+
+  /*********************** NEXT 4 DAYS FORECAST SECTION ***************************/
+  .container-3 {
+    position: absolute;
+    right: 0;
+  }
+
+  .cont {
+    margin: 20px;
+    margin-top: 30px;
+    height: 80px;
+    width: 300px;
+    background: #2d3a47;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .day {
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+
+  .icon {
+    position: relative;
+    right: -230px;
+    bottom: 55px;
+    width: 25%;
+  }
+
+  .temperature {
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 48px;
+    right: 78px;
+    display: inline;
+    font-weight: 300;
+  }
+
+  .desc {
+    position: absolute;
+    right: 50px;
+    display: inline;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+}
+
+/************************************* MEDIA QUERY *************************************/
+@media (max-width: 400px) {
+
+  /******************************** SEARCH BAR ************************************/
+  .cityname {
+      margin: 40px auto 20px;
+  }
+
+  .submit {
+    width: 66%;
+  }
+
+  /******************************** MAIN SECTION *********************************/
+  .main {
+    width: 90%;
+    height: 1000px;
+    left: 5%;
+    display: block;
+  }
+
+  .container-1 {
+    text-align: center;
+    margin-left: 0px;
+    display: inline;
+  }
+
+  .location {
+    font-size: 3.2rem;
+    padding-top: 30px
+  }
+
+  .main-icon {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    left: 50px;
+  }
+
+  /******************************* TEMPERATURE SECTION ***************************/
+  .temp {
+    display: flex;
+  }
+
+  .temp-main {
+    font-size: 3.5rem;
+    margin-left: 110px;
+  }
+
+  .temp-degree {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .temp-degree button {
+    font-size: 1.3rem;
+    padding-top: 3px;
+  }
+
+  /****************************** READING SECTION ********************************/
+  .container-2 {
+    justify-content: space-evenly;
+  }
+
+  .reading {
+    letter-spacing: 1px;
+  }
+
+  .reading h3 {
+    font-size: 1rem;
+  }
+
+  /*********************** NEXT 4 DAYS FORECAST SECTION ***************************/
+  .container-3 {
+    right: -8px;
+  }
+
+  .cont {
+    width: 280px;
+  }
+
+  .icon {
+    right: -220px;
+  }
+
+  .temperature {
+    font-size: 1.4rem;
+    bottom: 40px;
+  }
+
+  .desc {
+    right: 40px;
+  }
+}
