@@ -39,7 +39,7 @@ app.post("/", function(req, res) {
     // Response given by our server to client browser on getting the data
     response.on("data", function(data) {
 
-      const weatherData = JSON.parse(data)
+      let weatherData = JSON.parse(data);
       console.log(weatherData);
 
       if (weatherData.message === "city not found") {
@@ -54,7 +54,7 @@ app.post("/", function(req, res) {
         res.render("index", {dep, cur_weather, cityname:weatherData.message});
         } else {
 
-          const cur_day = date.getDate(weatherData.list[1].dt_txt);
+          let cur_day = date.getDate(weatherData.list[1].dt_txt);
           cur_weather = {
             cur_day: cur_day,
             cur_temp: Math.round(weatherData.list[1].main.temp),
@@ -66,7 +66,7 @@ app.post("/", function(req, res) {
           }
 
           for (let i=9; i<weatherData.list.length; i+=8 ) {
-            const day = date.getDate(weatherData.list[i].dt_txt);
+            let day = date.getDate(weatherData.list[i].dt_txt);
             weather = {
             day: day,
             temp: Math.round(weatherData.list[i].main.temp),

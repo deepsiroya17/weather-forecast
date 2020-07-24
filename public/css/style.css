@@ -92,9 +92,10 @@ input:focus::placeholder {
 
 .description {
   font-size: 1.4rem;
-  float: right;
-  margin-top: 50px;
-  margin-right: 170px;
+  margin: 0;
+  position: relative;
+  left: 128px;
+  bottom: 70px;
   text-transform: capitalize;
 }
 
