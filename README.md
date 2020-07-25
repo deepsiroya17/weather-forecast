@@ -1,6 +1,8 @@
 # Weather Forecast WebApp
 
-![Design preview](./images/ssimage.jpg)
+Demo Link: https://weather-forecast-web.herokuapp.com
+
+![Design preview](public/images/ssimage.jpg)
 
 ## Welcome! 👋
 
