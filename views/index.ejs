@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather Forecast</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -33,7 +34,7 @@
       <% } %>
 
       <% if(cur_weather.cur_icon !== null) { %>
-      <img class="main-icon" src="http://openweathermap.org/img/wn/<%= cur_weather.cur_icon %>@2x.png" alt="Img">
+      <img class="main-icon" src="https://openweathermap.org/img/wn/<%= cur_weather.cur_icon %>@2x.png" alt="Img">
       <% } %>
 
       <% if(cur_weather.cur_desc !== null) { %>
