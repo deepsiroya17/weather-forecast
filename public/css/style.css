@@ -237,6 +237,11 @@ input:focus::placeholder {
     padding-top: 30px
   }
 
+  .noCity {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
   .main-icon {
     margin-top: 10px;
     margin-left: 40px;
